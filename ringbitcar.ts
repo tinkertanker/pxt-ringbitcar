@@ -13,128 +13,100 @@
  * Custom blocks
  */
 //% color=#0fbc11 weight=10 icon="\uf1b9"
-namespace motorbit {
+namespace RingbitCar {
+
+    let pin_left_wheel = AnalogPin.P1
+    let pin_right_wheel = AnalogPin.P2
 
     /**
     * TODO: describe your function here
-    * @param n the n from 0 (min) to 100 (max), eg:0
+    * @param left describe parameter here, eg: AnalogPin.P1
+    * @param right describe parameter here, eg: AnalogPin.P2
     */
-    //% blockId=motorbit_forward block="move forward with speed %n"
-    //% n.min=0 n.max=100
-    export function forward(n: number): void {
+    //% blockId=ringbitcar_init block="init ringbitcar left at pin %left|right at ping %right"
+    export function init(left: AnalogPin, right: AnalogPin): void {
         // Add code here
 
-        pins.digitalWritePin(DigitalPin.P8, 0)
-        pins.digitalWritePin(DigitalPin.P12, 0)
-
-        pins.analogWritePin(AnalogPin.P1, n * 1023 / 100)
-        pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
+        pin_left_wheel = left
+        pin_right_wheel = right
 
     }
 
 
     /**
-     * TODO: describe your function here
-     * @param n the n from 0 (min) to 100 (max), eg:0
-     */
-    //% blockId=motorbit_back block="move back with speed %n"
-    //% n.min=0 n.max=100
-    export function back(n: number): void {
+    * TODO: describe your function here
+    */
+    //% blockId=ringbitcar_forward block="move forward"
+    export function forward(): void {
         // Add code here
 
+        pins.servoWritePin(pin_left_wheel, 180)
+        pins.servoWritePin(pin_right_wheel, 0)
 
-        pins.digitalWritePin(DigitalPin.P8, 1)
-        pins.digitalWritePin(DigitalPin.P12, 1)
+    }
 
-        pins.analogWritePin(AnalogPin.P1, n * 1023 / 100)
-        pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
+    /**
+    * TODO: describe your function here
+    */
+    //% blockId=ringbitcar_back block="move back"
+    export function back(): void {
+        // Add code here
 
+        pins.servoWritePin(pin_left_wheel, 0)
+        pins.servoWritePin(pin_right_wheel, 180)
+
+    }
+
+    /**
+    * TODO: describe your function here
+    */
+    //% blockId=ringbitcar_left block="turn left"
+    export function turnleft(): void {
+        // Add code here
+
+        pins.servoWritePin(pin_left_wheel, 0)
+        pins.servoWritePin(pin_right_wheel, 0)
 
     }
 
 
     /**
-     * TODO: describe your function here
-     * @param n the n from 0 (min) to 100 (max), eg:50
-     */
-    //% blockId=motorbit_turnleft block="turn left with speed %n"
-    //% n.min=0 n.max=100
-    export function turnleft(n: number): void {
+    * TODO: describe your function here
+    */
+    //% blockId=ringbitcar_right block="turn right"
+    export function turnright(): void {
         // Add code here
 
-        pins.digitalWritePin(DigitalPin.P8, 0)
-        pins.digitalWritePin(DigitalPin.P12, 0)
-
-        pins.analogWritePin(AnalogPin.P1, 0)
-        pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
+        pins.servoWritePin(pin_left_wheel, 180)
+        pins.servoWritePin(pin_right_wheel, 180)
 
     }
 
 
     /**
-     * TODO: describe your function here
-     * @param n the n from 0 (min) to 100 (max), eg:50
-     */
-    //% blockId=motorbit_turnright block="turn right with speed %n"
-    //% n.min=0 n.max=100
-    export function turnright(n: number): void {
-        // Add code here
-
-        pins.digitalWritePin(DigitalPin.P8, 0)
-        pins.digitalWritePin(DigitalPin.P12, 0)
-
-        pins.analogWritePin(AnalogPin.P1, n * 1023 / 100)
-        pins.analogWritePin(AnalogPin.P2, 0)
-
-    }
-
-
-    /**
-     * TODO: describe your function here
-     * 
-     */
-    //% blockId=motorbit_brake block="brake"
+    * TODO: describe your function here
+    */
+    //% blockId=ringbitcar_brake block="brake"
     export function brake(): void {
         // Add code here
 
-        pins.digitalWritePin(DigitalPin.P8, 0)
-        pins.digitalWritePin(DigitalPin.P12, 0)
-
-        pins.analogWritePin(AnalogPin.P1, 0)
-        pins.analogWritePin(AnalogPin.P2, 0)
+        pins.analogWritePin(pin_left_wheel, 0)
+        pins.analogWritePin(pin_right_wheel, 0)
 
     }
-
 
 
     /**
     * TODO: describe your function here
-    * @param m the m from -100 (min) to 100 (max), eg:0
-    * @param n the n from -100 (min) to 100 (max), eg:0
     */
-    //% blockId=motorbit_freestyle block="left wheel speed %m| right wheel speed %n"
-    //% m.min=-100 m.max=100
-    //% n.min=-100 n.max=100
-    export function freestyle(m: number, n: number): void {
+    //% blockId=ringbitcar_line_follow block="line follow"
+    export function line_follow(): void {
         // Add code here
 
-        if (m > 0) {
-            pins.digitalWritePin(DigitalPin.P8, 0)
-            pins.analogWritePin(AnalogPin.P1, m * 1023 / 100)
-        }
-        else {
-            pins.digitalWritePin(DigitalPin.P8, 1)
-            pins.analogWritePin(AnalogPin.P1, - m * 1023 / 100)
-        }
-
-        if (n > 0) {
-            pins.digitalWritePin(DigitalPin.P12, 0)
-            pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
-        } else {
-            pins.digitalWritePin(DigitalPin.P12, 1)
-            pins.analogWritePin(AnalogPin.P2, - n * 1023 / 100)
-        }
+        pins.analogWritePin(pin_left_wheel, 0)
+        pins.analogWritePin(pin_right_wheel, 0)
 
     }
+
 
 }
