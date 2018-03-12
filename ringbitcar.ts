@@ -12,7 +12,7 @@
 /**
  * Custom blocks
  */
-//% color=#0fbc11 weight=10 icon="\uf1b9"
+//% color=#0fbc11 weight=10 icon="\uf207"
 namespace RingbitCar {
 
     let pin_left_wheel = AnalogPin.P1
