@@ -38,7 +38,7 @@ namespace RingbitCar {
     /**
     * TODO: describe your function here
     */
-    //% weight=2
+    //% weight=9
     //% blockId=ringbitcar_forward block="move forward"
     export function forward(): void {
         // Add code here
@@ -53,7 +53,7 @@ namespace RingbitCar {
     /**
     * TODO: describe your function here
     */
-    //% weight=3
+    //% weight=8
     //% blockId=ringbitcar_back block="move back"
     export function back(): void {
         // Add code here
@@ -68,7 +68,7 @@ namespace RingbitCar {
     /**
     * TODO: describe your function here
     */
-    //% weight=4
+    //% weight=7
     //% blockId=ringbitcar_left block="turn left"
     export function turnleft(): void {
         // Add code here
@@ -82,7 +82,7 @@ namespace RingbitCar {
     /**
     * TODO: describe your function here
     */
-    //% weight=5
+    //% weight=6
     //% blockId=ringbitcar_right block="turn right"
     export function turnright(): void {
         // Add code here
@@ -96,7 +96,7 @@ namespace RingbitCar {
     /**
     * TODO: describe your function here
     */
-    //% weight=6
+    //% weight=5
     //% blockId=ringbitcar_brake block="brake"
     export function brake(): void {
         // Add code here
@@ -110,7 +110,7 @@ namespace RingbitCar {
     /**
     * TODO: describe your function here
     */
-    //% weight=7
+    //% weight=10
     //% advanced=true
     //% blockId=ringbitcar_line_follow block="line follow"
     export function line_follow(): void {
@@ -127,7 +127,7 @@ namespace RingbitCar {
     * @param m the m from -100 (min) to 100 (max), eg:0
     * @param n the n from -100 (min) to 100 (max), eg:0
     */
-    //% weight=8
+    //% weight=9
     //% advanced=true
     //% blockId=ringbitcar_freestyle block="left wheel speed %m| right wheel speed %n"
     //% m.min=-100 m.max=100
