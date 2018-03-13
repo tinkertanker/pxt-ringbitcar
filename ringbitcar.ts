@@ -23,7 +23,7 @@ namespace RingbitCar {
     * @param left describe parameter here, eg: AnalogPin.P1
     * @param right describe parameter here, eg: AnalogPin.P2
     */
-    //% weight=1
+    //% weight=10
     //% blockId=ringbitcar_init block="set left wheel at pin %left|right wheel at ping %right"
     export function init_wheel(left: AnalogPin, right: AnalogPin): void {
         // Add code here
