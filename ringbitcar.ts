@@ -23,6 +23,7 @@ namespace RingbitCar {
     * @param left describe parameter here, eg: AnalogPin.P1
     * @param right describe parameter here, eg: AnalogPin.P2
     */
+    //% weight=1
     //% blockId=ringbitcar_init block="set left wheel at pin %left|right wheel at ping %right"
     export function init_wheel(left: AnalogPin, right: AnalogPin): void {
         // Add code here
@@ -32,10 +33,12 @@ namespace RingbitCar {
 
     }
 
+    
 
     /**
     * TODO: describe your function here
     */
+    //% weight=2
     //% blockId=ringbitcar_forward block="move forward"
     export function forward(): void {
         // Add code here
@@ -44,12 +47,13 @@ namespace RingbitCar {
         pins.servoWritePin(pin_right_wheel, 0)
 
     }
+    
+    
 
     /**
-
-
-* TODO: describe your function here
+    * TODO: describe your function here
     */
+    //% weight=3
     //% blockId=ringbitcar_back block="move back"
     export function back(): void {
         // Add code here
@@ -58,10 +62,13 @@ namespace RingbitCar {
         pins.servoWritePin(pin_right_wheel, 180)
 
     }
+    
+    
 
     /**
     * TODO: describe your function here
     */
+    //% weight=4
     //% blockId=ringbitcar_left block="turn left"
     export function turnleft(): void {
         // Add code here
@@ -75,6 +82,7 @@ namespace RingbitCar {
     /**
     * TODO: describe your function here
     */
+    //% weight=5
     //% blockId=ringbitcar_right block="turn right"
     export function turnright(): void {
         // Add code here
@@ -88,6 +96,7 @@ namespace RingbitCar {
     /**
     * TODO: describe your function here
     */
+    //% weight=6
     //% blockId=ringbitcar_brake block="brake"
     export function brake(): void {
         // Add code here
@@ -101,6 +110,7 @@ namespace RingbitCar {
     /**
     * TODO: describe your function here
     */
+    //% weight=7
     //% advanced=true
     //% blockId=ringbitcar_line_follow block="line follow"
     export function line_follow(): void {
@@ -117,6 +127,7 @@ namespace RingbitCar {
     * @param m the m from -100 (min) to 100 (max), eg:0
     * @param n the n from -100 (min) to 100 (max), eg:0
     */
+    //% weight=8
     //% advanced=true
     //% blockId=ringbitcar_freestyle block="left wheel speed %m| right wheel speed %n"
     //% m.min=-100 m.max=100
