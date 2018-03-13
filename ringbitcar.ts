@@ -46,7 +46,9 @@ namespace RingbitCar {
     }
 
     /**
-    * TODO: describe your function here
+
+
+* TODO: describe your function here
     */
     //% blockId=ringbitcar_back block="move back"
     export function back(): void {
@@ -99,12 +101,41 @@ namespace RingbitCar {
     /**
     * TODO: describe your function here
     */
+    //% advanced=true
     //% blockId=ringbitcar_line_follow block="line follow"
     export function line_follow(): void {
         // Add code here
 
         pins.analogWritePin(pin_left_wheel, 0)
         pins.analogWritePin(pin_right_wheel, 0)
+
+    }
+    
+    
+    /**
+    * TODO: describe your function here
+    * @param m the m from -100 (min) to 100 (max), eg:0
+    * @param n the n from -100 (min) to 100 (max), eg:0
+    */
+    //% advanced=true
+    //% blockId=ringbitcar_freestyle block="left wheel speed %m| right wheel speed %n"
+    //% m.min=-100 m.max=100
+    //% n.min=-100 n.max=100
+    export function freestyle(m: number, n: number): void {
+        // Add code here
+
+        if (m > 0) {
+            pins.servoWritePin(AnalogPin.P1, 100 + m * 4 / 5)            
+        } else if (m < 0){
+            pins.servoWritePin(AnalogPin.P1, 80 + m * 4 / 5)
+        } else pins.analogWritePin(AnalogPin.P1, 0)
+
+
+        if (n > 0) {
+            pins.servoWritePin(AnalogPin.P0, 80 - n * 4 / 5)
+        } else if (n < 0) {
+            pins.servoWritePin(AnalogPin.P0, 100 - n * 4 / 5)
+        } else pins.analogWritePin(AnalogPin.P0, 0)
 
     }
 
