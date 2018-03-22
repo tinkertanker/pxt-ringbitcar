@@ -1,5 +1,6 @@
-# Motor:bit Package
-This ElecFreaks Motor:bit package was developed by [ElecFreaks](https://www.elecfreaks.com/) with minor assistance from [Tinkercademy](https://tinkercademy.com/).
+
+# Ring:bit Car Package
+This ElecFreaks Ring:bit Car package was developed by [ElecFreaks](https://www.elecfreaks.com/) with minor assistance from [Tinkercademy](https://tinkercademy.com/).
 
 The [ElecFreaks Motor:bit](http://www.elecfreaks.com/estore/elecfreaks-motor-bit-for-micro-bit.html) is an integrated motor driver and breakout board for the BBC micro:bit. With an integrated motor driver chip TB6612, your micro:bit can drive two DC motors with 1.2A max single channel current. 
 
@@ -7,7 +8,8 @@ The Motor:bit also features the Octopus series "GVS" connectors, allowing for ea
 
 If you're using your own breakout board or motor driver, connect your driver such that P8 and P12 control direction, and P1 and P2 control speed.
 
-![](https://github.com/tinkertanker/pxt-motorbit/blob/master/icon.png?raw=true)
+
+![](https://github.com/elecfreaks/pxt-ringbitcar/blob/master/icon.png?raw=true)
 
 ## User Guide
 [ELECFREAKS Motor:bit User Guide](https://www.elecfreaks.com/11703.html)
