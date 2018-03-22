@@ -8,22 +8,18 @@ This ElecFreaks Ring:bit Car package was developed by [ElecFreaks](https://www.e
 ![](https://github.com/elecfreaks/pxt-ringbitcar/blob/master/icon.png?raw=true)
 
 ## User Guide
-[ELECFREAKS Motor:bit User Guide](http://www.elecfreaks.com/estore/ring-bit-car-mirco-bit-educational-smart-robot-kit-for-kids.html)
+[ElecFreaks Ring:bit Car User Guide](http://www.elecfreaks.com/estore/ring-bit-car-mirco-bit-educational-smart-robot-kit-for-kids.html)
 
 ## Code Example
 ```JavaScript
 basic.forever(() => {
-    motorbit.forward(70)
-    basic.pause(2000)
-    motorbit.back(50)
-    basic.pause(2000)
-    motorbit.turnleft(50)
-    basic.pause(2000)
-    motorbit.turnright(50)
-    basic.pause(2000)
-    motorbit.brake()
-    basic.pause(2000)
-    motorbit.freestyle(-40, 30)
+    RingbitCar.forward()
+    basic.pause(1000)
+    RingbitCar.turnleft()
+    basic.pause(1000)
+    RingbitCar.turnleft()
+    basic.pause(1000)
+    RingbitCar.back()
     basic.pause(2000)
 })
 ```
