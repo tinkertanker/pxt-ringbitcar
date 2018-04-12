@@ -111,8 +111,7 @@ namespace RingbitCar {
     export function line_follow(): void {
         // Add code here
 
-        pins.analogWritePin(pin_left_wheel, 0)
-        pins.analogWritePin(pin_right_wheel, 0)
+    
 
     }
 
