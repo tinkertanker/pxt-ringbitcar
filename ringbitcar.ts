@@ -1,12 +1,7 @@
-
-
 /**
  * Use this file to define custom functions and blocks.
  * Read more at https://makecode.microbit.org/blocks/custom
  */
-
-
-
 
 
 /**
@@ -33,7 +28,7 @@ namespace RingbitCar {
 
     }
 
-    
+
 
     /**
     * TODO: describe your function here
@@ -43,12 +38,12 @@ namespace RingbitCar {
     export function forward(): void {
         // Add code here
 
-        pins.servoWritePin(pin_left_wheel, 180)
-        pins.servoWritePin(pin_right_wheel, 0)
+        pins.servoSetPulse(pin_left_wheel, 2000)
+        pins.servoSetPulse(pin_right_wheel, 1000)
 
     }
-    
-    
+
+
 
     /**
     * TODO: describe your function here
@@ -58,12 +53,12 @@ namespace RingbitCar {
     export function back(): void {
         // Add code here
 
-        pins.servoWritePin(pin_left_wheel, 0)
-        pins.servoWritePin(pin_right_wheel, 180)
+        pins.servoSetPulse(pin_left_wheel, 1000)
+        pins.servoSetPulse(pin_right_wheel, 2000)
 
     }
-    
-    
+
+
 
     /**
     * TODO: describe your function here
@@ -73,8 +68,8 @@ namespace RingbitCar {
     export function turnleft(): void {
         // Add code here
 
-        pins.servoWritePin(pin_left_wheel, 0)
-        pins.servoWritePin(pin_right_wheel, 0)
+        pins.servoSetPulse(pin_left_wheel, 1000)
+        pins.servoSetPulse(pin_right_wheel, 1000)
 
     }
 
@@ -87,8 +82,8 @@ namespace RingbitCar {
     export function turnright(): void {
         // Add code here
 
-        pins.servoWritePin(pin_left_wheel, 180)
-        pins.servoWritePin(pin_right_wheel, 180)
+        pins.servoSetPulse(pin_left_wheel, 2000)
+        pins.servoSetPulse(pin_right_wheel, 2000)
 
     }
 
@@ -101,8 +96,8 @@ namespace RingbitCar {
     export function brake(): void {
         // Add code here
 
-        pins.analogWritePin(pin_left_wheel, 0)
-        pins.analogWritePin(pin_right_wheel, 0)
+        pins.servoSetPulse(pin_left_wheel, 1500)
+        pins.servoSetPulse(pin_right_wheel, 1500)
 
     }
 
@@ -116,12 +111,11 @@ namespace RingbitCar {
     export function line_follow(): void {
         // Add code here
 
-        pins.analogWritePin(pin_left_wheel, 0)
-        pins.analogWritePin(pin_right_wheel, 0)
+    
 
     }
-    
-    
+
+
     /**
     * TODO: describe your function here
     * @param m the m from -100 (min) to 100 (max), eg:0
@@ -136,19 +130,20 @@ namespace RingbitCar {
         // Add code here
 
         if (m > 0) {
-            pins.servoWritePin(AnalogPin.P1, 100 + m * 4 / 5)            
-        } else if (m < 0){
-            pins.servoWritePin(AnalogPin.P1, 80 + m * 4 / 5)
-        } else pins.analogWritePin(AnalogPin.P1, 0)
+            pins.servoSetPulse(pin_left_wheel, 1650 + m * 4)
+        } else if (m < 0) {
+            pins.servoSetPulse(pin_left_wheel, 1350 + m * 4)
+        } else pins.servoSetPulse(pin_left_wheel, 1500)
 
 
         if (n > 0) {
-            pins.servoWritePin(AnalogPin.P0, 80 - n * 4 / 5)
+            pins.servoSetPulse(pin_right_wheel, 1350 - n * 4)
         } else if (n < 0) {
-            pins.servoWritePin(AnalogPin.P0, 100 - n * 4 / 5)
-        } else pins.analogWritePin(AnalogPin.P0, 0)
+            pins.servoSetPulse(pin_right_wheel, 1650 - n * 4)
+        } else pins.servoSetPulse(pin_right_wheel, 1500)
 
     }
 
 
 }
+
