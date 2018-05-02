@@ -13,6 +13,9 @@ namespace RingbitCar {
     let pin_left_wheel = AnalogPin.P1
     let pin_right_wheel = AnalogPin.P2
 
+    let digital_pin_left_wheel = DigitalPin.P1
+    let digital_pin_right_wheel = DigitalPin.P2
+
     /**
     * TODO: describe your function here
     * @param left describe parameter here, eg: AnalogPin.P1
@@ -25,6 +28,22 @@ namespace RingbitCar {
 
         pin_left_wheel = left
         pin_right_wheel = right
+
+        if (left == AnalogPin.P1) {
+            digital_pin_left_wheel = DigitalPin.P1
+        } 
+        else if (left == AnalogPin.P2) {
+            digital_pin_left_wheel = DigitalPin.P2
+        } 
+        else { digital_pin_left_wheel = DigitalPin.P0 }
+
+        if (right == AnalogPin.P1) {
+            digital_pin_right_wheel = DigitalPin.P1
+        } 
+        else if (right == AnalogPin.P2) {
+            digital_pin_right_wheel = DigitalPin.P2
+        } 
+        else { digital_pin_right_wheel = DigitalPin.P0 }
 
     }
 
@@ -96,8 +115,11 @@ namespace RingbitCar {
     export function brake(): void {
         // Add code here
 
-        pins.servoSetPulse(pin_left_wheel, 1500)
-        pins.servoSetPulse(pin_right_wheel, 1500)
+        //pins.servoSetPulse(pin_left_wheel, 1500)
+        //pins.servoSetPulse(pin_right_wheel, 1500)
+
+        pins.digitalWritePin(digital_pin_left_wheel, 0)
+        pins.digitalWritePin(digital_pin_right_wheel, 0)
 
     }
 
@@ -111,7 +133,7 @@ namespace RingbitCar {
     export function line_follow(): void {
         // Add code here
 
-    
+
 
     }
 
