@@ -181,11 +181,11 @@ namespace RingbitCar {
 
         if (i < 100 && state == 0) {
             return true;
-        } else if (i < 200 && state == 1) {
+        } else if (i > 100 && i < 200 && state == 1) {
             return true;
-        } else if (i < 300 && state == 2) {
+        } else if (i > 200 && i < 300 && state == 2) {
             return true;
-        } else if (i < 400 && state == 3) {
+        } else if (i > 300 && i < 400 && state == 3) {
             return true;
         } else return false;
 
