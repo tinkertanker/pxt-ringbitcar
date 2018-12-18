@@ -11,7 +11,7 @@
  * Custom blocks
  */
 //% color=#0fbc11 weight=10 icon="\uf207"
-namespace RingbitCar {
+namespace ringbitcar {
     
     export enum TrackingStateType {
         //% block="● ●" enumval=0
