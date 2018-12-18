@@ -37,6 +37,32 @@ enum Distance_Unit {
  */
 //% color=#0fbc11 weight=10 icon="\uf207"
 namespace RingbitCar {
+    
+    export enum TrackingStateType {
+        //% block="● ●" enumval=0
+        Tracking_State_0,
+
+        //% block="● ◌" enumval=1
+        Tracking_State_1,
+
+        //% block="◌ ●" enumval=2
+        Tracking_State_2,
+
+        //% block="◌ ◌" enumval=3
+        Tracking_State_3,
+    }
+
+
+    export enum Distance_Unit {
+        //% block="mm" enumval=0
+        Distance_Unit_mm,
+
+        //% block="cm" enumval=1
+        Distance_Unit_cm,
+
+        //% block="inch" enumval=2
+        Distance_Unit_inch,
+    }
 
     let pin_left_wheel = AnalogPin.P1
     let pin_right_wheel = AnalogPin.P2
