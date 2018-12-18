@@ -1,5 +1,5 @@
 {
-    "ringbitcar|block": "迷你自走車",
+    "ringbitcar|block": "RingbitCar",
     "ringbitcar.init_wheel|block": "設定左輪連接 %left|右輪連接 %right",
     "ringbitcar.forward|block": "全速前进",
     "ringbitcar.back|block": "全速前進",
