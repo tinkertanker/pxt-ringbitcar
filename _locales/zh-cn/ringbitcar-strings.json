@@ -1,9 +1,6 @@
 {
     "ringbitcar|block": "迷你小车",
-    "ringbitcar.forward|block": "全速前进",
-    "ringbitcar.back|block": "全速后退",
-    "ringbitcar.turnleft|block": "全速左转",
-    "ringbitcar.turnright|block": "全速右转",
-    "ringbitcar.brake|block": "刹车"
+    "ringbitcar.forward|block": "全速前进"
     
 }
+
