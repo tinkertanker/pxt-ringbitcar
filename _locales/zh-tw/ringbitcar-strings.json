@@ -8,6 +8,6 @@
     "ringbitcar.brake|block": "刹車",
     "ringbitcar.freestyle|block": "設定左輪速度為 %m| 右輪速度為 %n",
     "ringbitcar.tracking|block": "巡線頭狀態為 %state",
-    "ringbitcar.ringbitcar_sonarbit|block": "超聲波測距值 %distance_unit"
+    "ringbitcar.ringbitcar_sonarbit|block": "超聲波測距值 %distance_unit" 
     
 }
