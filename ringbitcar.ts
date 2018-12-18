@@ -4,31 +4,6 @@
  */
 
 
-enum TrackingStateType {
-    //% block="● ●" enumval=0
-    Tracking_State_0,
-
-    //% block="● ◌" enumval=1
-    Tracking_State_1,
-
-    //% block="◌ ●" enumval=2
-    Tracking_State_2,
-
-    //% block="◌ ◌" enumval=3
-    Tracking_State_3,
-}
-
-
-enum Distance_Unit {
-    //% block="mm" enumval=0
-    Distance_Unit_mm,
-
-    //% block="cm" enumval=1
-    Distance_Unit_cm,
-
-    //% block="inch" enumval=2
-    Distance_Unit_inch,
-}
 
 
 
