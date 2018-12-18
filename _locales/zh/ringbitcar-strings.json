@@ -1,5 +1,4 @@
 {
-    "RingbitCar|block": "ringbitcar",
     "RingbitCar.init_wheel|block":"设置左轮连接 %left|右轮连接 %right",
     "RingbitCar.forward|block":"全速前进",
     "RingbitCar.back|block":"全速后退",
