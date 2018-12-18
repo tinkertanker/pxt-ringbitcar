@@ -4,10 +4,8 @@
  */
 
 
-/**
- * Custom blocks
- */
-//% color=#0fbc11 weight=10 icon="\uf207"
+
+//% weight=0 color=#0fbc11  icon="\uf207" block="RingbitCar"
 namespace ringbitcar {
     
     export enum TrackingStateType {
@@ -21,7 +19,7 @@ namespace ringbitcar {
         Tracking_State_2,
 
         //% block="◌ ◌" enumval=3
-        Tracking_State_3,
+        Tracking_State_3
     }
 
 
@@ -33,7 +31,7 @@ namespace ringbitcar {
         Distance_Unit_cm,
 
         //% block="inch" enumval=2
-        Distance_Unit_inch,
+        Distance_Unit_inch
     }
 
     let pin_left_wheel = AnalogPin.P1
