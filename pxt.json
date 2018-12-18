@@ -1,5 +1,5 @@
 {
-    "name": "ringbitcar",
+    "name": "RingbitCar",
     "version": "2.1.0",
     "description": "ELECFREAKS ring:bit car",
     "license": "MIT",
@@ -9,8 +9,9 @@
     "files": [
         "README.md",
         "ringbitcar.ts",
-        "_locales/zh-cn/ringbitcar-strings.json",
-        "_locales/zh-tw/ringbitcar-strings.json"
+        "_locales/zh-cn/RingbitCar-strings.json",
+        "_locales/zh-tw/RingbitCar-strings.json",
+        "_locales/ja/RingbitCar-strings.json"
     ],
     "testFiles": [
         "tests.ts"
