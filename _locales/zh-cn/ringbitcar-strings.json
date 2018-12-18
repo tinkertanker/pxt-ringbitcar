@@ -1,20 +1,9 @@
 {
     "ringbitcar|block": "迷你小车",
-    "ringbitcar.TrackingStateType.Tracking_State_0|block": "● ●",
-    "ringbitcar.TrackingStateType.Tracking_State_1|block": "● ◌",
-    "ringbitcar.TrackingStateType.Tracking_State_2|block": "◌ ●",
-    "ringbitcar.TrackingStateType.Tracking_State_3|block": "◌ ◌",
-    "ringbitcar.Distance_Unit.Distance_Unit_mm|block": "mm",
-    "ringbitcar.Distance_Unit.Distance_Unit_cm|block": "cm",
-    "ringbitcar.Distance_Unit.Distance_Unit_inch|block": "inch",
-    "ringbitcar.init_wheel|block": "设置左轮连接 %left|右轮连接 %right",
     "ringbitcar.forward|block": "全速前进",
     "ringbitcar.back|block": "全速后退",
     "ringbitcar.turnleft|block": "全速左转",
     "ringbitcar.turnright|block": "全速右转",
-    "ringbitcar.brake|block": "刹车",
-    "ringbitcar.freestyle|block": "设置左轮速度为 %m| 右轮速度为 %n",
-    "ringbitcar.tracking|block": "巡线头状态为 %state",
-    "ringbitcar.ringbitcar_sonarbit|block": "超声波测距值 %distance_unit"
+    "ringbitcar.brake|block": "刹车"
     
 }
