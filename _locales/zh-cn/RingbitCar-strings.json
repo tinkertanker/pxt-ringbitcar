@@ -1,14 +1,14 @@
 {
-    "ringbitcar|block": "RingbitCar",
-    "ringbitcar.init_wheel|block": "设置左轮连接 %left|右轮连接 %right",
-    "ringbitcar.forward|block": "全速前进",
-    "ringbitcar.back|block": "全速后退",
-    "ringbitcar.turnleft|block": "全速左转",
-    "ringbitcar.turnright|block": "全速右转",
-    "ringbitcar.brake|block": "刹车",
-    "ringbitcar.freestyle|block": "设置左轮速度为 %m| 右轮速度为 %n",
-    "ringbitcar.tracking|block": "巡线头状态为 %state",
-    "ringbitcar.ringbitcar_sonarbit|block": "超声波测距值 %distance_unit"
+    "RingbitCar|block": "RingbitCar",
+    "RingbitCar.init_wheel|block": "设置左轮连接 %left|右轮连接 %right",
+    "RingbitCar.forward|block": "全速前进",
+    "RingbitCar.back|block": "全速后退",
+    "RingbitCar.turnleft|block": "全速左转",
+    "RingbitCar.turnright|block": "全速右转",
+    "RingbitCar.brake|block": "刹车",
+    "RingbitCar.freestyle|block": "设置左轮速度为 %m| 右轮速度为 %n",
+    "RingbitCar.tracking|block": "巡线头状态为 %state",
+    "RingbitCar.ringbitcar_sonarbit|block": "超声波测距值 %distance_unit"
     
 }
 
