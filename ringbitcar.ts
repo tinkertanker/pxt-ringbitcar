@@ -6,7 +6,7 @@
 
 
 //% weight=0 color=#0fbc11  icon="\uf207" block="RingbitCar"
-namespace ringbitcar {
+namespace RingbitCar {
     
     export enum TrackingStateType {
         //% block="● ●" enumval=0
