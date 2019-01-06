@@ -4,39 +4,35 @@
  */
 
 
-enum TrackingStateType {
-    //% block="● ●" enumval=0
-    Tracking_State_0,
 
-    //% block="● ◌" enumval=1
-    Tracking_State_1,
-
-    //% block="◌ ●" enumval=2
-    Tracking_State_2,
-
-    //% block="◌ ◌" enumval=3
-    Tracking_State_3,
-}
-
-
-enum Distance_Unit {
-    //% block="mm" enumval=0
-    Distance_Unit_mm,
-
-    //% block="cm" enumval=1
-    Distance_Unit_cm,
-
-    //% block="inch" enumval=2
-    Distance_Unit_inch,
-}
-
-
-
-/**
- * Custom blocks
- */
-//% color=#0fbc11 weight=10 icon="\uf207"
+//% weight=0 color=#0fbc11  icon="\uf207" block="RingbitCar"
 namespace RingbitCar {
+    
+    export enum TrackingStateType {
+        //% block="● ●" enumval=0
+        Tracking_State_0,
+
+        //% block="● ◌" enumval=1
+        Tracking_State_1,
+
+        //% block="◌ ●" enumval=2
+        Tracking_State_2,
+
+        //% block="◌ ◌" enumval=3
+        Tracking_State_3
+    }
+
+
+    export enum Distance_Unit {
+        //% block="mm" enumval=0
+        Distance_Unit_mm,
+
+        //% block="cm" enumval=1
+        Distance_Unit_cm,
+
+        //% block="inch" enumval=2
+        Distance_Unit_inch
+    }
 
     let pin_left_wheel = AnalogPin.P1
     let pin_right_wheel = AnalogPin.P2
@@ -181,11 +177,11 @@ namespace RingbitCar {
 
         if (i < 100 && state == 0) {
             return true;
-        } else if (i < 200 && state == 1) {
+        } else if (i > 100 && i < 200 && state == 1) {
             return true;
-        } else if (i < 300 && state == 2) {
+        } else if (i > 200 && i < 300 && state == 2) {
             return true;
-        } else if (i < 400 && state == 3) {
+        } else if (i > 300 && i < 400 && state == 3) {
             return true;
         } else return false;
 

@@ -1,0 +1,13 @@
+{
+    "RingbitCar|block": "RingbitCar",
+    "RingbitCar.init_wheel|block": "左の車輪を設置する %left|右の車輪を設置する %right",
+    "RingbitCar.forward|block": "急速な前進",
+    "RingbitCar.back|block": "急速な後ろ向き",
+    "RingbitCar.turnleft|block": "左へ曲がる",
+    "RingbitCar.turnright|block": "右へ曲がる",
+    "RingbitCar.brake|block": "停車",
+    "RingbitCar.freestyle|block": "左の速度を設置する %m| 右の速度を設置する %n",
+    "RingbitCar.tracking|block": "パトロールヘッドを設置%state",
+    "RingbitCar.ringbitcar_sonarbit|block": "超音波測距 %distance_unit"
+    
+}
