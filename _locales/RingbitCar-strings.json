@@ -1,0 +1,20 @@
+{
+  "RingbitCar.Distance_Unit.Distance_Unit_cm|block": "cm",
+  "RingbitCar.Distance_Unit.Distance_Unit_inch|block": "inch",
+  "RingbitCar.Distance_Unit.Distance_Unit_mm|block": "mm",
+  "RingbitCar.TrackingStateType.Tracking_State_0|block": "● ●",
+  "RingbitCar.TrackingStateType.Tracking_State_1|block": "● ◌",
+  "RingbitCar.TrackingStateType.Tracking_State_2|block": "◌ ●",
+  "RingbitCar.TrackingStateType.Tracking_State_3|block": "◌ ◌",
+  "RingbitCar.back|block": "reverse at full speed",
+  "RingbitCar.brake|block": "brake",
+  "RingbitCar.forward|block": "go straight at full speed",
+  "RingbitCar.freestyle|block": "set left wheel speed %m| right wheel speed %n",
+  "RingbitCar.init_wheel|block": "set left wheel at pin %left|right wheel at pin %right",
+  "RingbitCar.ringbitcar_sonarbit|block": "ultrasonic distance in unit %distance_unit",
+  "RingbitCar.tracking|block": "tracking state is %state",
+  "RingbitCar.turnleft|block": "turn left at full speed",
+  "RingbitCar.turnright|block": "turn right at full speed",
+  "RingbitCar|block": "RingbitCar",
+  "{id:category}RingbitCar": "RingbitCar"
+}

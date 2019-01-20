@@ -1,0 +1,16 @@
+{
+  "RingbitCar": "Use this file to define custom functions and blocks.\nRead more at https://makecode.microbit.org/blocks/custom",
+  "RingbitCar.back": "TODO: full speed move back",
+  "RingbitCar.brake": "TODO: stop",
+  "RingbitCar.forward": "TODO: full speed move forward",
+  "RingbitCar.freestyle": "TODO: self setting speed",
+  "RingbitCar.freestyle|param|m": "the m from -100 (min) to 100 (max), eg:0",
+  "RingbitCar.freestyle|param|n": "the n from -100 (min) to 100 (max), eg:0",
+  "RingbitCar.init_wheel": "TODO: initialization ring:bit car",
+  "RingbitCar.init_wheel|param|left": "describe parameter here, eg: AnalogPin.P1",
+  "RingbitCar.init_wheel|param|right": "describe parameter here, eg: AnalogPin.P2",
+  "RingbitCar.ringbitcar_sonarbit": "TODO: get ultrasonic distance",
+  "RingbitCar.tracking": "TODO: line following",
+  "RingbitCar.turnleft": "TODO: full speed turn left",
+  "RingbitCar.turnright": "TODO: full speed turn right"
+}
