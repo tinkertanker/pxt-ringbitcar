@@ -1,0 +1,16 @@
+{
+	"RingbitCar": "Utilisez ce fichier pour définir des fonctions et des blocs personnalisés.\nLire la suite sur https://makecode.microbit.org/blocks/custom",
+  "RingbitCar.back": "À faire: recule à pleine vitesse",
+  "RingbitCar.brake": "À faire: arrêt",
+  "RingbitCar.forward": "À faire: avance à tout vitesse",
+  "RingbitCar.freestyle": "À faire: vitesse regulé automatiquement",
+  "RingbitCar.freestyle|param|m": "fixe m de -100 (min) à 100 (max), example:0",
+  "RingbitCar.freestyle|param|n": "fixe n de -100 (min) à 100 (max), example:0",
+  "RingbitCar.init_wheel": "À faire: initialisation de la voiture  ring:bit",
+  "RingbitCar.init_wheel|param|left": "ici, décrire un paramètre, example: AnalogPin.P1",
+  "RingbitCar.init_wheel|param|right": "ici, décrire un paramètre, example: AnalogPin.P2",
+  "RingbitCar.ringbitcar_sonarbit": "À faire: obtenir la distance",
+  "RingbitCar.tracking": "À faire: suiveur de ligne",
+  "RingbitCar.turnleft": "À faire: tourne à gauche à pleine vitesse",
+  "RingbitCar.turnright": "À faire: tourne à droite à pleine vitesse"
+}
