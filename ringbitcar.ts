@@ -1,7 +1,4 @@
-/**
- * Use this file to define custom functions and blocks.
- * Read more at https://makecode.microbit.org/blocks/custom
- */
+
 
 
 
@@ -175,13 +172,13 @@ namespace RingbitCar {
 
         let i = pins.analogReadPin(sensor_pin)
 
-        if (i < 100 && state == 0) {
+        if (i < 150 && state == 0) {
             return true;
-        } else if (i > 100 && i < 200 && state == 1) {
+        } else if (i >= 150 && i < 235 && state == 1) {
             return true;
-        } else if (i > 200 && i < 300 && state == 2) {
+        } else if (i >= 235 && i < 310 && state == 2) {
             return true;
-        } else if (i > 300 && i < 400 && state == 3) {
+        } else if (i >= 310 && i < 500 && state == 3) {
             return true;
         } else return false;
 
