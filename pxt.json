@@ -4,7 +4,8 @@
     "description": "ELECFREAKS ring:bit car",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "NeoPixel": "github:microsoft/pxt-neopixel"
     },
     "files": [
         "README.md",
