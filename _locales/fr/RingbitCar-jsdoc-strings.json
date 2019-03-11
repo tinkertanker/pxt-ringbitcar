@@ -1,8 +1,8 @@
 {
 	"RingbitCar": "Utilisez ce fichier pour définir les fonctions et les blocs.\nLire la suite sur https://makecode.microbit.org/blocks/custom.",
-  "RingbitCar.back": "Recule à pleine vitesse.",
+  "RingbitCar.back": "Recule, à pleine vitesse.",
   "RingbitCar.brake": "Freine.",
-  "RingbitCar.forward": "Avance à tout vitesse.",
+  "RingbitCar.forward": "Avance, à tout vitesse.",
   "RingbitCar.freestyle": "Pour chaque moteur ou roue, détermine le pourcentage de la vitesse maximale (100). \nLa valeur peut être négative. \nEn marche arrière, la vitesse maximale est -100.",
   "RingbitCar.freestyle|param|m": "Détermine la valeur de m entre -100 (min) et 100 (max). 50, par exemple.",
   "RingbitCar.freestyle|param|n": "Détermine la valeur de n entre -100 (min) et 100 (max). 50, par exemple.",
@@ -11,6 +11,6 @@
   "RingbitCar.init_wheel|param|right": "Broche du moteur ou de la roue à droite. AnalogPin.P2, par exemple.",
   "RingbitCar.ringbitcar_sonarbit": "Détermine l'unité de mesure pour le calcul de la distance. \nLe sonar estime la distance de l'objet devant.",
   "RingbitCar.tracking": "Suivi de piste.",
-  "RingbitCar.turnleft": "Tourne à gauche à pleine vitesse.",
-  "RingbitCar.turnright": "Tourne à droite à pleine vitesse."
+  "RingbitCar.turnleft": "Tourne à gauche, à pleine vitesse.",
+  "RingbitCar.turnright": "Tourne à droite, à pleine vitesse."
 }

@@ -14,7 +14,7 @@
   "RingbitCar.ringbitcar_sonarbit|block": "calculer distance en %distance_unit",
   "RingbitCar.tracking|block": "l'état actuel est %state",
   "RingbitCar.turnleft|block": "tourner à gauche à pleine vitesse",
-  "RingbitCar.turnright|block": "tourne à droite à pleine vitesse",
+  "RingbitCar.turnright|block": "tourner à droite à pleine vitesse",
   "RingbitCar|block": "RingbitCar",
   "{id:category}RingbitCar": "RingbitCar"
 }
