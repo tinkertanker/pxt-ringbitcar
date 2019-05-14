@@ -20,5 +20,4 @@
         "tests.ts"
     ],
     "public": true,
-    "installedVersion": "github:elecfreaks/pxt-ringbitcar#v2.1.0"
 }
