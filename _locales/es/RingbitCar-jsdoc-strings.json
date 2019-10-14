@@ -1,0 +1,16 @@
+{
+  "RingbitCar": "Usar este archivo para definir las funciones y los bloques.\nLeer más en https://makecode.microbit.org/blocks/custom",
+  "RingbitCar.back": "Da marcha atrás a toda velocidad",
+  "RingbitCar.brake": "Frena",
+  "RingbitCar.forward": "Avanza a toda velocidad",
+  "RingbitCar.freestyle": "Configura la velocidad de cada rueda",
+  "RingbitCar.freestyle|param|m": "m entre -100 (mínimo) y 100 (máximo), por ejemplo 0",
+  "RingbitCar.freestyle|param|n": "n entre -100 (mínimo) y 100 (máximo), por ejemplo 0",
+  "RingbitCar.init_wheel": "Inicialización de los pines de las ruedas izquierda y derecha del ring:bit car",
+  "RingbitCar.init_wheel|param|left": "Pin de la rueda izquierda, por ejemplo: AnalogPin.P1",
+  "RingbitCar.init_wheel|param|right": "Pin de la rueda derecha, por ejemplo: AnalogPin.P2",
+  "RingbitCar.ringbitcar_sonarbit": "Obtiene la distancia del sensor ultrasónico",
+  "RingbitCar.tracking": "Seguidor de línea",
+  "RingbitCar.turnleft": "Gira a la izquierda a toda velocidad",
+  "RingbitCar.turnright": "Gira a la derecha a toda velocidad"
+}
