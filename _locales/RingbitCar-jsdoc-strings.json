@@ -1,5 +1,4 @@
 {
-  "RingbitCar": "Use this file to define custom functions and blocks.\nRead more at https://makecode.microbit.org/blocks/custom",
   "RingbitCar.back": "TODO: full speed move back",
   "RingbitCar.brake": "TODO: stop",
   "RingbitCar.forward": "TODO: full speed move forward",
