@@ -57,24 +57,24 @@ namespace RingbitCar {
 
     }
     //% weight=25
-    //% blockId=steering angle block="spin %angle degrees %direction"
-    export function steering_angle(angle: number, direction: Direction_turn): void {
+    //% blockId=steering angle block="spin %direction %angle degrees "
+    export function steering_angle(direction: Direction_turn, angle: number): void {
         let timeWait = (angle * 1000000) / 135;
-if (direction == 1) {
-    pins.servoWritePin(pin_left_wheel, 50);
-    pins.servoWritePin(pin_right_wheel, 50);
-    control.waitMicros(timeWait);
-    brake();
-}
-else{
-    pins.servoWritePin(pin_left_wheel, 130);
-    pins.servoWritePin(pin_right_wheel, 130);
-    control.waitMicros(timeWait);
-    brake();
-}
+        if (direction == 1) {
+            pins.servoWritePin(pin_left_wheel, 50);
+            pins.servoWritePin(pin_right_wheel, 50);
+            control.waitMicros(timeWait);
+            brake();
+        }
+        else {
+            pins.servoWritePin(pin_left_wheel, 130);
+            pins.servoWritePin(pin_right_wheel, 130);
+            control.waitMicros(timeWait);
+            brake();
+        }
     }
     //% weight=29
-    //% blockId=running distance block="go%direction to %distance cm"
+    //% blockId=running distance block="go %direction to %distance cm"
     export function running_distance(direction: Direction_run, distance: number): void {
         let timeWait = (distance * 1000000) / 100;
         if (direction == 1) {
