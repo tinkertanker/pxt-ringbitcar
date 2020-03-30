@@ -1,10 +1,6 @@
-
-
-
-
 //% weight=0 color=#0fbc11  icon="\uf207" block="RingbitCar"
 namespace RingbitCar {
-    
+
     export enum TrackingStateType {
         //% block="● ●" enumval=0
         Tracking_State_0,
@@ -30,6 +26,18 @@ namespace RingbitCar {
         //% block="inch" enumval=2
         Distance_Unit_inch
     }
+    export enum Direction_turn {
+        //% block="right" enumval=0
+        right,
+        //% block="left" enumval=1
+        left
+    }
+    export enum Direction_run {
+        //% block="forward" enumval=0
+        forward,
+        //% block="backward" enumval=1
+        backward
+    }
 
     let pin_left_wheel = AnalogPin.P1
     let pin_right_wheel = AnalogPin.P2
@@ -40,13 +48,45 @@ namespace RingbitCar {
     * @param left describe parameter here, eg: AnalogPin.P1
     * @param right describe parameter here, eg: AnalogPin.P2
     */
-    //% weight=10
+    //% weight=99
     //% blockId=ringbitcar_init block="set left wheel at pin %left|right wheel at pin %right"
     export function init_wheel(left: AnalogPin, right: AnalogPin): void {
         // Add code here
         pin_left_wheel = left
         pin_right_wheel = right
 
+    }
+    //% weight=25
+    //% blockId=steering angle block="spin %direction %angle degrees "
+    export function steering_angle(direction: Direction_turn, angle: number): void {
+        let timeWait = (angle * 1000000) / 135;
+        if (direction == 1) {
+            pins.servoWritePin(pin_left_wheel, 50);
+            pins.servoWritePin(pin_right_wheel, 50);
+            control.waitMicros(timeWait);
+            brake();
+        }
+        else {
+            pins.servoWritePin(pin_left_wheel, 130);
+            pins.servoWritePin(pin_right_wheel, 130);
+            control.waitMicros(timeWait);
+            brake();
+        }
+    }
+    //% weight=29
+    //% blockId=running distance block="go %direction to %distance cm"
+    export function running_distance(direction: Direction_run, distance: number): void {
+        let timeWait = (distance * 1000000) / 100;
+        if (direction == 1) {
+            forward();
+            control.waitMicros(timeWait);
+            brake();
+        }
+        else {
+            back();
+            control.waitMicros(timeWait);
+            brake();
+        }
     }
 
 
@@ -132,7 +172,7 @@ namespace RingbitCar {
     * @param n the n from -100 (min) to 100 (max), eg:0
     */
     //% weight=4
-    //% blockId=ringbitcar_freestyle block="set left wheel speed %m| right wheel speed %n"
+    //% blockId=ringbitcar_freestyle block="set left wheel speed at %m| right wheel speed at %n"
     //% m.min=-100 m.max=100
     //% n.min=-100 n.max=100
     export function freestyle(m: number, n: number): void {
@@ -232,8 +272,6 @@ namespace RingbitCar {
         }
 
     }
-
-
 
 
 

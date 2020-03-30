@@ -1,6 +1,6 @@
 {
-  "RingbitCar.Direction_run.backward|block": "后",
-  "RingbitCar.Direction_run.forward|block": "前",
+  "RingbitCar.Direction_run.backward|block": "backward",
+  "RingbitCar.Direction_run.forward|block": "forward",
   "RingbitCar.Direction_turn.left|block": "左",
   "RingbitCar.Direction_turn.right|block": "右",
   "RingbitCar.Distance_Unit.Distance_Unit_cm|block": "厘米",
@@ -17,7 +17,7 @@
   "RingbitCar.init_wheel|block": "设置左轮连接 %left|右轮连接 %right",
   "RingbitCar.ringbitcar_sonarbit|block": "超声波测距值 %distance_unit",
   "RingbitCar.running_distance|block": "向%direction 行驶 %distance 厘米",
-  "RingbitCar.steering_angle|block": "向 %direction 旋转 %angle 度",
+  "RingbitCar.steering_angle|block": "向 %direction 旋转 %angle ",
   "RingbitCar.tracking|block": "巡线头状态为 %state",
   "RingbitCar.turnleft|block": "全速左转",
   "RingbitCar.turnright|block": "全速右转",
