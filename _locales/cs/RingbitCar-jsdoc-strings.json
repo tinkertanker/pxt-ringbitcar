@@ -1,0 +1,15 @@
+{
+  "RingbitCar.back": "rozjede autíčko plnou rychlostí dozadu",
+  "RingbitCar.brake": "zastaví autíčko",
+  "RingbitCar.forward": "rozjede autíčko plnou rychlostí dopředu",
+  "RingbitCar.freestyle": "nastaví rychlost každého kolečka",
+  "RingbitCar.freestyle|param|m": "vzdálenost m od -100 (min) do 100 (max), např.: 0",
+  "RingbitCar.freestyle|param|n": "vzdálenost m od -100 (min) to 100 (max), např.: 0",
+  "RingbitCar.init_wheel": "nastaví piny, na kterých jsou připojena kolečka",
+  "RingbitCar.init_wheel|param|left": "pin pravého kolečka, např.: AnalogPin.P1",
+  "RingbitCar.init_wheel|param|right": "pin pravého kolečka, např.: AnalogPin.P2",
+  "RingbitCar.ringbitcar_sonarbit": "získá vzdálenost ultrasonického snímače",
+  "RingbitCar.tracking": "je stav zadaného sledovače",
+  "RingbitCar.turnleft": "otočí autíčko plnou rychlostí doleva",
+  "RingbitCar.turnright": "otočí autíčko plnou rychlostí doprava"
+}
