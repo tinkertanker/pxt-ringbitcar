@@ -1,0 +1,15 @@
+{
+  "RingbitCar.back": "Beveger seg bakover med full hastighet",
+  "RingbitCar.brake": "Stopper",
+  "RingbitCar.forward": "Beveger seg forover med full hastighet",
+  "RingbitCar.freestyle": "TODO: self setting speed",
+  "RingbitCar.freestyle|param|m": "m mellom -100 (min) til 100 (max), f.eks.:0",
+  "RingbitCar.freestyle|param|n": "n mellom -100 (min) til 100 (max), f.eks.:0",
+  "RingbitCar.init_wheel": "Initialiserer Ring:bitCar",
+  "RingbitCar.init_wheel|param|left": "Beskriv parameter her, f.eks: AnalogPin.P1",
+  "RingbitCar.init_wheel|param|right": "Beskriv parameter her, f.eks: AnalogPin.P2",
+  "RingbitCar.ringbitcar_sonarbit": "Avstandsmåling fra ultralydsensoren",
+  "RingbitCar.tracking": "Følg linjen",
+  "RingbitCar.turnleft": "Sving til venstre med full hastighet",
+  "RingbitCar.turnright": "Sving til venstre med full hastighet"
+}

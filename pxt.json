@@ -19,6 +19,8 @@
         "_locales/es/RingbitCar-jsdoc-strings.json",
         "_locales/cs/RingbitCar-strings.json",
         "_locales/cs/RingbitCar-jsdoc-strings.json"
+        "_locales/no-nb/RingbitCar-strings.json",
+        "_locales/no-nb/RingbitCar-jsdoc-strings.json"
     ],
     "testFiles": [
         "tests.ts"
