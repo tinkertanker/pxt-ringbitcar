@@ -10,15 +10,19 @@
     "files": [
         "README.md",
         "ringbitcar.ts",
-        "_locales/zh/RingbitCar-strings.json",
         "_locales/ja/RingbitCar-strings.json",
         "_locales/fr/RingbitCar-strings.json",
         "_locales/fr/RingbitCar-jsdoc-strings.json",
         "_locales/es/RingbitCar-strings.json",
-        "_locales/es/RingbitCar-jsdoc-strings.json"
+        "_locales/es/RingbitCar-jsdoc-strings.json",
+        "_locales/zh/RingbitCar-strings.json"
     ],
     "testFiles": [
         "tests.ts"
     ],
-    "public": true
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
 }
