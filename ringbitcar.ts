@@ -66,7 +66,7 @@ namespace RingbitCar {
         }
     }
     //% weight=29
-    //% blockId=running distance block="go %direction to %distance cm"
+    //% blockId=distance_run block="go %direction to %distance cm"
     export function running_distance(direction: Direction_run, distance: number): void {
         let timeWait = (distance * 1000000) / 100;
         if (direction == 0) {
@@ -81,7 +81,7 @@ namespace RingbitCar {
         }
     }
     //% weight=30
-    //% blockId=running time block="go %direction for %time seconds"
+    //% blockId=time_run block="go %direction for %time seconds"
     export function running_time(direction: Direction_run, time: number): void {
         if (direction == 0) {
             forward();
