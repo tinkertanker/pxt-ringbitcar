@@ -17,6 +17,7 @@
   "RingbitCar.init_wheel|block": "set left wheel at pin %left|right wheel at pin %right",
   "RingbitCar.ringbitcar_sonarbit|block": "ultrasonic distance in unit %distance_unit",
   "RingbitCar.running_distance|block": "go %direction to %distance cm",
+  "RingbitCar.running_time|block": "go %direction for %time seconds",
   "RingbitCar.steering_angle|block": "spin %direction %angle degrees ",
   "RingbitCar.tracking|block": "tracking state is %state",
   "RingbitCar.turnleft|block": "turn left at full speed",

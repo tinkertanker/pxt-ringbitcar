@@ -1,0 +1,12 @@
+{
+    "RingbitCar|block": "RingbitCar",
+    "RingbitCar.init_wheel|block": "設定左輪連接 %left|右輪連接 %right",
+    "RingbitCar.forward|block": "全速前進",
+    "RingbitCar.back|block": "全速後退",
+    "RingbitCar.turnleft|block": "全速左轉",
+    "RingbitCar.turnright|block": "全速右轉",
+    "RingbitCar.brake|block": "刹車",
+    "RingbitCar.freestyle|block": "設定左輪速度為 %m| 右輪速度為 %n",
+    "RingbitCar.tracking|block": "巡線頭狀態為 %state",
+    "RingbitCar.ringbitcar_sonarbit|block": "超聲波測距值 %distance_unit" 
+}
