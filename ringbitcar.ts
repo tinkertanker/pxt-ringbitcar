@@ -77,7 +77,7 @@ namespace RingbitCar {
     //% blockId=running distance block="go %direction to %distance cm"
     export function running_distance(direction: Direction_run, distance: number): void {
         let timeWait = (distance * 1000000) / 100;
-        if (direction == 1) {
+        if (direction == 0) {
             forward();
             control.waitMicros(timeWait);
             brake();
