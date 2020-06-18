@@ -88,7 +88,20 @@ namespace RingbitCar {
             brake();
         }
     }
-
+    //% weight=30
+    //% blockId=running time block="go %direction for %time seconds"
+    export function running_time(direction: Direction_run, time: number): void {
+        if (direction == 0) {
+            forward();
+            basic.pause(time * 1000)
+            brake();
+        }
+        else {
+            back();
+            basic.pause(time * 1000)
+            brake();
+        }
+    }
 
 
     /**
