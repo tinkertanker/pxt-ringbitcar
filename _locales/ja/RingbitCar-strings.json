@@ -15,7 +15,7 @@
   "RingbitCar.forward|block": "フルスピードで前進",
   "RingbitCar.freestyle|block": "左タイヤを %m| の速さ、 |右タイヤを %n の速さで回す",
   "RingbitCar.init_wheel|block": "左タイヤを %left| にする、 右タイヤを %right にする",
-  "RingbitCar.running_time|block": "%direction 向きに %time 秒動かす”,
+  "RingbitCar.running_time|block": "%direction 向きに %time 秒動かす",
   "RingbitCar.ringbitcar_sonarbit|block": "超音波センサの値 %unit",
   "RingbitCar.running_distance|block": "%direction 向きに %distance cm",
   "RingbitCar.steering_angle|block": "%direction 向きに %angle 度 ",
