@@ -93,21 +93,15 @@ namespace RingbitCar {
         }
     }
 
-
     /**
     * TODO: full speed move forward
     */
     //% weight=9
     //% blockId=ringbitcar_forward block="go straight at full speed"
     export function forward(): void {
-        // Add code here
-
         pins.servoSetPulse(pin_left_wheel, 2400)
         pins.servoSetPulse(pin_right_wheel, 600)
-
     }
-
-
 
     /**
     * TODO: full speed move back
@@ -115,14 +109,9 @@ namespace RingbitCar {
     //% weight=8
     //% blockId=ringbitcar_back block="reverse at full speed"
     export function back(): void {
-        // Add code here
-
         pins.servoSetPulse(pin_left_wheel, 600)
         pins.servoSetPulse(pin_right_wheel, 2400)
-
     }
-
-
 
     /**
     * TODO: full speed turn left
@@ -130,13 +119,10 @@ namespace RingbitCar {
     //% weight=7
     //% blockId=ringbitcar_left block="turn left at full speed"
     export function turnleft(): void {
-        // Add code here
-
         pins.servoSetPulse(pin_left_wheel, 600)
         pins.servoSetPulse(pin_right_wheel, 600)
 
     }
-
 
     /**
     * TODO: full speed turn right
@@ -144,13 +130,10 @@ namespace RingbitCar {
     //% weight=6
     //% blockId=ringbitcar_right block="turn right at full speed"
     export function turnright(): void {
-        // Add code here
-
         pins.servoSetPulse(pin_left_wheel, 2400)
         pins.servoSetPulse(pin_right_wheel, 2400)
 
     }
-
 
     /**
     * TODO: stop
@@ -158,16 +141,12 @@ namespace RingbitCar {
     //% weight=5
     //% blockId=ringbitcar_brake block="brake"
     export function brake(): void {
-        // Add code here
-
         //pins.servoSetPulse(pin_left_wheel, 1500)
         //pins.servoSetPulse(pin_right_wheel, 1500)
         pins.digitalWritePin(<number>pin_left_wheel, 0)
         pins.digitalWritePin(<number>pin_right_wheel, 0)
 
     }
-
-
 
     /**
     * TODO: self setting speed
@@ -179,14 +158,11 @@ namespace RingbitCar {
     //% m.min=-100 m.max=100
     //% n.min=-100 n.max=100
     export function freestyle(m: number, n: number): void {
-        // Add code here
-
         if (m > 0) {
             pins.servoSetPulse(pin_left_wheel, 1600 + m * 8)
         } else if (m < 0) {
             pins.servoSetPulse(pin_left_wheel, 1400 + m * 8)
         } else pins.servoSetPulse(pin_left_wheel, 1500)
-
 
         if (n > 0) {
             pins.servoSetPulse(pin_right_wheel, 1400 - n * 8)
@@ -195,8 +171,6 @@ namespace RingbitCar {
         } else pins.servoSetPulse(pin_right_wheel, 1500)
 
     }
-
-
 
     /**
     * TODO: line following
@@ -212,9 +186,7 @@ namespace RingbitCar {
         } else if (pin_left_wheel != AnalogPin.P2 && pin_right_wheel != AnalogPin.P2) {
             sensor_pin = AnalogPin.P2
         }
-
         let i = pins.analogReadPin(sensor_pin)
-
         if (i < 150 && state == 0) {
             return true;
         } else if (i >= 150 && i < 235 && state == 1) {
@@ -227,8 +199,6 @@ namespace RingbitCar {
 
     }
 
-
-
     /**
     * TODO: get ultrasonic distance
     */
@@ -236,15 +206,12 @@ namespace RingbitCar {
     //% advanced=true
     //% blockId=ringbitcar_sonarbit block="ultrasonic distance in unit %distance_unit"
     export function ringbitcar_sonarbit(distance_unit: Distance_Unit): number {
-
         let sensor_pin = DigitalPin.P0
-
         if (pin_left_wheel != AnalogPin.P1 && pin_right_wheel != AnalogPin.P1) {
             sensor_pin = DigitalPin.P1
         } else if (pin_left_wheel != AnalogPin.P2 && pin_right_wheel != AnalogPin.P2) {
             sensor_pin = DigitalPin.P2
         }
-
         // send pulse
         pins.setPull(sensor_pin, PinPullMode.PullNone);
         pins.digitalWritePin(sensor_pin, 0);
@@ -252,16 +219,12 @@ namespace RingbitCar {
         pins.digitalWritePin(sensor_pin, 1);
         control.waitMicros(10);
         pins.digitalWritePin(sensor_pin, 0);
-
         // read pulse
         const d = pins.pulseIn(sensor_pin, PulseValue.High, 23000);
-
         let distance = d * 10 * 5 / 3 / 58
-
         if (distance > 4000){
             return 0
         }
-
         switch (distance_unit) {
             case Distance_Unit.Distance_Unit_cm:
                return Math.idiv(d, 58);  //cm
@@ -271,12 +234,8 @@ namespace RingbitCar {
                 break
             default:
                 return 0
-
         }
-
     }
-
-
 
 }
 
