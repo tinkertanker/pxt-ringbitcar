@@ -239,37 +239,38 @@ namespace RingbitCar {
     //% blockId=ringbitcar_sonarbit block="ultrasonic distance in unit %distance_unit"
     export function ringbitcar_sonarbit(distance_unit: Distance_Unit): number {
 
-        let sensor_pin = AnalogPin.P0
+        let sensor_pin = DigitalPin.P0
 
         if (pin_left_wheel != AnalogPin.P1 && pin_right_wheel != AnalogPin.P1) {
-            sensor_pin = AnalogPin.P1
+            sensor_pin = DigitalPin.P1
         } else if (pin_left_wheel != AnalogPin.P2 && pin_right_wheel != AnalogPin.P2) {
-            sensor_pin = AnalogPin.P2
+            sensor_pin = DigitalPin.P2
         }
 
         // send pulse
-        pins.setPull(<number>sensor_pin, PinPullMode.PullNone)
-        pins.digitalWritePin(<number>sensor_pin, 0)
-        control.waitMicros(2)
-        pins.digitalWritePin(<number>sensor_pin, 1)
-        control.waitMicros(10)
-        pins.digitalWritePin(<number>sensor_pin, 0)
+        pins.setPull(sensor_pin, PinPullMode.PullNone);
+        pins.digitalWritePin(sensor_pin, 0);
+        control.waitMicros(2);
+        pins.digitalWritePin(sensor_pin, 1);
+        control.waitMicros(10);
+        pins.digitalWritePin(sensor_pin, 0);
 
         // read pulse
-        let d = pins.pulseIn(<number>sensor_pin, PulseValue.High, 23000)  // 8 / 340 = 
+        const d = pins.pulseIn(sensor_pin, PulseValue.High, 29000);
+        
         let distance = d * 10 * 5 / 3 / 58
 
         if (distance > 4000) distance = 0
 
         switch (distance_unit) {
             case 0:
-                return distance //mm
+                return Math.idiv(distance, 1) //mm
                 break
             case 1:
-                return distance / 10  //cm
+                return Math.idiv(distance, 10)  //cm
                 break
             case 2:
-                return distance / 25  //inch
+                return Math.idiv(distance, 25)  //inch
                 break
             default:
                 return 0
