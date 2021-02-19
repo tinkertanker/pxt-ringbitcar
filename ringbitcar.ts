@@ -264,13 +264,13 @@ namespace RingbitCar {
 
         switch (distance_unit) {
             case 0:
-                return Math.idiv(distance, 1) //mm
+                return distance //mm
                 break
             case 1:
-                return Math.idiv(distance, 10)  //cm
+                return distance / 10  //cm
                 break
             case 2:
-                return Math.idiv(distance, 25)  //inch
+                return distance / 25  //inch
                 break
             default:
                 return 0
