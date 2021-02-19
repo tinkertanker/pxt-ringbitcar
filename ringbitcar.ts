@@ -12,8 +12,6 @@ namespace RingbitCar {
         Tracking_State_3
     }
     export enum Distance_Unit {
-        //% block="mm" enumval=0
-        Distance_Unit_mm,
         //% block="cm" enumval=1
         Distance_Unit_cm,
         //% block="inch" enumval=2
@@ -256,21 +254,20 @@ namespace RingbitCar {
         pins.digitalWritePin(sensor_pin, 0);
 
         // read pulse
-        const d = pins.pulseIn(sensor_pin, PulseValue.High, 29000);
-        
+        const d = pins.pulseIn(sensor_pin, PulseValue.High, 23000);
+
         let distance = d * 10 * 5 / 3 / 58
 
-        if (distance > 4000) distance = 0
+        if (distance > 4000){
+            return 0
+        }
 
         switch (distance_unit) {
-            case 0:
-                return distance //mm
+            case Distance_Unit.Distance_Unit_cm:
+               return Math.idiv(d, 58);  //cm
                 break
-            case 1:
-                return distance / 10  //cm
-                break
-            case 2:
-                return distance / 25  //inch
+            case Distance_Unit.Distance_Unit_inch:
+                return Math.idiv(d, 148);  //inch
                 break
             default:
                 return 0
