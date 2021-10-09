@@ -47,7 +47,7 @@ namespace RingbitCar {
 
     }
 
-    /*
+    /**
     *For reference only
     */
     //% weight=25
@@ -68,7 +68,7 @@ namespace RingbitCar {
         }
     }
 
-    /*
+    /**
     *For reference only
     */
     //% weight=29
