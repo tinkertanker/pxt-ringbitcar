@@ -1,6 +1,6 @@
 {
     "name": "RingbitCar",
-    "version": "3.1.2",
+    "version": "3.1.3",
     "description": "ELECFREAKS ring:bit car",
     "license": "MIT",
     "dependencies": {
