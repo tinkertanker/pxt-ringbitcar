@@ -46,6 +46,10 @@ namespace RingbitCar {
         pin_right_wheel = right
 
     }
+
+    /*
+    *For reference only
+    */
     //% weight=25
     //% blockId=steering angle block="spin %direction %angle degrees "
     export function steering_angle(direction: Direction_turn, angle: number): void {
@@ -63,6 +67,10 @@ namespace RingbitCar {
             brake();
         }
     }
+
+    /*
+    *For reference only
+    */
     //% weight=29
     //% blockId=distance_run block="go %direction to %distance cm"
     export function running_distance(direction: Direction_run, distance: number): void {
