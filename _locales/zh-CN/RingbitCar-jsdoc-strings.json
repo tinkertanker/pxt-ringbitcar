@@ -11,5 +11,7 @@
   "RingbitCar.ringbitcar_sonarbit": "TODO: get ultrasonic distance",
   "RingbitCar.tracking": "TODO: line following",
   "RingbitCar.turnleft": "TODO: full speed turn left",
-  "RingbitCar.turnright": "TODO: full speed turn right"
+  "RingbitCar.turnright": "TODO: full speed turn right",
+  "RingbitCar.steering_angle": "仅供参考",
+  "RingbitCar.running_distance": "仅供参考"
 }
