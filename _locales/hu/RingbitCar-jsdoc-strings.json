@@ -1,0 +1,18 @@
+{
+  "RingbitCar.back": "Teljes sebességgel hátra",
+  "RingbitCar.brake": "Fék",
+  "RingbitCar.forward": "Teljes sebességgel előre",
+  "RingbitCar.freestyle": "Egyedi sebesség",
+  "RingbitCar.freestyle|param|m": "m -100-tól 100-ig, pl.:0",
+  "RingbitCar.freestyle|param|n": "n -100-tól 100-ig, pl.:0",
+  "RingbitCar.init_wheel": "A ring:bit autó inicializációja",
+  "RingbitCar.init_wheel|param|left": "A bal kerék lába, pl.: P1",
+  "RingbitCar.init_wheel|param|right": "A jobb kerék lába, pl.: P2",
+  "RingbitCar.ringbitcar_sonarbit": "Ultrahang távolság",
+  "RingbitCar.tracking": "vonal követés",
+  "RingbitCar.turnleft": "Teljes sebességgel balra",
+  "RingbitCar.turnright": "Teljes sebességgel jobbra",
+  "RingbitCar.steering_angle": "Forgás bizonyos fokkal az adott irányba",
+  "RingbitCar.running_distance": "Menj x cm-t adott irányba",
+  "RingbitCar.running_time": "Menj x másodpercig adott irányba"
+}
