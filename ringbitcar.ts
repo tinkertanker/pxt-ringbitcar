@@ -212,7 +212,7 @@ namespace RingbitCar {
     */
     //% weight=9
     //% advanced=true
-    //% blockId=ringbitcar_sonarbit block="ultrasonic distance in unit %distance_unit"
+    //% blockId=ringbitcar_sonarbit block="ultrasonic distance in unit %Distance_Unit"
     export function ringbitcar_sonarbit(distance_unit: Distance_Unit): number {
         let sensor_pin = DigitalPin.P0
         if (pin_left_wheel != AnalogPin.P1 && pin_right_wheel != AnalogPin.P1) {
@@ -228,17 +228,21 @@ namespace RingbitCar {
         control.waitMicros(10);
         pins.digitalWritePin(sensor_pin, 0);
         // read pulse
-        const d = pins.pulseIn(sensor_pin, PulseValue.High, 23000);
-        let distance = d * 10 * 5 / 3 / 58
-        if (distance > 4000){
-            return 0
+        let d = pins.pulseIn(sensor_pin, PulseValue.High, 25000)  // 8 / 340 = 
+        let distance = d / 58
+
+        if (distance > 400) {
+            distance = 0
         }
         switch (distance_unit) {
-            case Distance_Unit.Distance_Unit_cm:
-               return Math.idiv(d, 58);  //cm
+            case 0:
+                return Math.floor(distance * 10) //mm
                 break
-            case Distance_Unit.Distance_Unit_inch:
-                return Math.idiv(d, 148);  //inch
+            case 1:
+                return Math.floor(distance)  //cm
+                break
+            case 2:
+                return Math.floor(distance / 254)   //inch
                 break
             default:
                 return 0
