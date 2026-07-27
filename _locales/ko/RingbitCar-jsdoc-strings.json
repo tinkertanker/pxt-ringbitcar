@@ -12,6 +12,7 @@
   "RingbitCar.tracking": "라인 트레이싱 센서의 상태를 확인합니다",
   "RingbitCar.turnleft": "최고 속도로 좌회전합니다",
   "RingbitCar.turnright": "최고 속도로 우회전합니다",
-  "RingbitCar.steering_angle": "참고용입니다",
-  "RingbitCar.running_distance": "참고용입니다"
+  "RingbitCar.steering_angle": "지정한 방향으로 설정한 각도만큼 회전합니다",
+  "RingbitCar.running_distance": "지정한 방향으로 설정한 거리(cm)만큼 이동합니다",
+  "RingbitCar.running_time": "지정한 방향으로 설정한 시간(초) 동안 이동합니다"
 }
