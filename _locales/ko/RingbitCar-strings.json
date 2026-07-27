@@ -15,7 +15,7 @@
   "RingbitCar.forward|block": "최고 속도로 직진",
   "RingbitCar.freestyle|block": "왼쪽 바퀴 속도 %m| 오른쪽 바퀴 속도 %n",
   "RingbitCar.init_wheel|block": "왼쪽 바퀴 핀 %left|오른쪽 바퀴 핀 %right",
-  "RingbitCar.ringbitcar_sonarbit|block": "초음파 거리 단위 %distance_unit",
+  "RingbitCar.ringbitcar_sonarbit|block": "초음파 거리 단위 %Distance_Unit",
   "RingbitCar.running_distance|block": "%direction 방향으로 %distance cm 이동",
   "RingbitCar.running_time|block": "%direction 방향으로 %time 초 동안 이동",
   "RingbitCar.steering_angle|block": "%direction 방향으로 %angle 도 회전",
