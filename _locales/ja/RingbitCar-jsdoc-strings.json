@@ -1,0 +1,10 @@
+{
+  "RingbitCar.back": "最高速度で走ります。少し曲がることがあります。",
+  "RingbitCar.forward": "最高速度で走ります。少し曲がることがあります。",
+  "RingbitCar.steering_angle": "設定した角度だけ回転します。実際の角度は少しずれることがあります。",
+  "RingbitCar.steering_angle|param|direction": "回転する方向",
+  "RingbitCar.steering_angle|param|angle": "回転する角度。単位は度です。例: 90",
+  "RingbitCar.running_distance": "設定した距離だけ進みます。実際の距離は少しずれることがあります。",
+  "RingbitCar.running_distance|param|direction": "進む方向",
+  "RingbitCar.running_distance|param|distance": "進む距離。単位はセンチメートルです。例: 10"
+}

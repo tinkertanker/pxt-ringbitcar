@@ -1,7 +1,7 @@
 {
-  "RingbitCar.back": "TODO: full speed move back",
+  "RingbitCar.back": "Moves at full speed. It may drift slightly.",
   "RingbitCar.brake": "TODO: stop",
-  "RingbitCar.forward": "TODO: full speed move forward",
+  "RingbitCar.forward": "Moves at full speed. It may drift slightly.",
   "RingbitCar.freestyle": "TODO: self setting speed",
   "RingbitCar.freestyle|param|m": "the m from -100 (min) to 100 (max), eg:0",
   "RingbitCar.freestyle|param|n": "the n from -100 (min) to 100 (max), eg:0",
@@ -12,6 +12,10 @@
   "RingbitCar.tracking": "TODO: line following",
   "RingbitCar.turnleft": "TODO: full speed turn left",
   "RingbitCar.turnright": "TODO: full speed turn right",
-  "RingbitCar.steering_angle": "For reference only",
-  "RingbitCar.running_distance": "For reference only"
+  "RingbitCar.steering_angle": "Turns about the set angle. Actual angle may vary slightly.",
+  "RingbitCar.steering_angle|param|direction": "direction to turn",
+  "RingbitCar.steering_angle|param|angle": "angle to turn in degrees, eg: 90",
+  "RingbitCar.running_distance": "Moves about the set distance. Actual distance may vary slightly.",
+  "RingbitCar.running_distance|param|direction": "direction to move",
+  "RingbitCar.running_distance|param|distance": "distance to move in centimeters, eg: 10"
 }

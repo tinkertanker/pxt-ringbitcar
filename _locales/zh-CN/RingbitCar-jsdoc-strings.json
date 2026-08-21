@@ -1,7 +1,7 @@
 {
-  "RingbitCar.back": "TODO: full speed move back",
+  "RingbitCar.back": "以最大速度行驶，可能会稍微跑偏。",
   "RingbitCar.brake": "TODO: stop",
-  "RingbitCar.forward": "TODO: full speed move forward",
+  "RingbitCar.forward": "以最大速度行驶，可能会稍微跑偏。",
   "RingbitCar.freestyle": "TODO: self setting speed",
   "RingbitCar.freestyle|param|m": "the m from -100 (min) to 100 (max), eg:0",
   "RingbitCar.freestyle|param|n": "the n from -100 (min) to 100 (max), eg:0",
@@ -12,6 +12,10 @@
   "RingbitCar.tracking": "TODO: line following",
   "RingbitCar.turnleft": "TODO: full speed turn left",
   "RingbitCar.turnright": "TODO: full speed turn right",
-  "RingbitCar.steering_angle": "仅供参考",
-  "RingbitCar.running_distance": "仅供参考"
+  "RingbitCar.steering_angle": "按设定角度旋转，实际角度可能略有差异。",
+  "RingbitCar.steering_angle|param|direction": "旋转方向",
+  "RingbitCar.steering_angle|param|angle": "旋转角度，单位为度，例如：90",
+  "RingbitCar.running_distance": "按设定距离前进，实际距离可能略有差异。",
+  "RingbitCar.running_distance|param|direction": "行驶方向",
+  "RingbitCar.running_distance|param|distance": "行驶距离，单位为厘米，例如：10"
 }

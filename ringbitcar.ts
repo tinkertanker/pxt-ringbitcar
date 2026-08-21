@@ -48,7 +48,9 @@ namespace RingbitCar {
     }
 
     /**
-    *For reference only
+    * Turns about the set angle. Actual angle may vary slightly.
+    * @param direction direction to turn
+    * @param angle angle to turn in degrees, eg: 90
     */
     //% weight=25
     //% blockId=steering angle block="spin %direction %angle degrees "
@@ -69,7 +71,9 @@ namespace RingbitCar {
     }
 
     /**
-    *For reference only
+    * Moves about the set distance. Actual distance may vary slightly.
+    * @param direction direction to move
+    * @param distance distance to move in centimeters, eg: 10
     */
     //% weight=29
     //% blockId=distance_run block="go %direction to %distance cm"
@@ -102,7 +106,7 @@ namespace RingbitCar {
     }
 
     /**
-    * TODO: full speed move forward
+    * Moves at full speed. It may drift slightly.
     */
     //% weight=9
     //% blockId=ringbitcar_forward block="go straight at full speed"
@@ -112,7 +116,7 @@ namespace RingbitCar {
     }
 
     /**
-    * TODO: full speed move back
+    * Moves at full speed. It may drift slightly.
     */
     //% weight=8
     //% blockId=ringbitcar_back block="reverse at full speed"

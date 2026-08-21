@@ -11,6 +11,7 @@
         "README.md",
         "ringbitcar.ts",
         "_locales/ja/RingbitCar-strings.json",
+        "_locales/ja/RingbitCar-jsdoc-strings.json",
         "_locales/fr/RingbitCar-strings.json",
         "_locales/fr/RingbitCar-jsdoc-strings.json",
         "_locales/es/RingbitCar-strings.json",
